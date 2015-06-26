@@ -1,0 +1,21 @@
+{
+  "dev": {
+    "secret": "HELLO WORLD",
+    "db": {
+      "database": "lorum",
+      "options": {
+        "host": "127.0.0.1",
+        "dialect": "postgres"
+      }
+    }
+  },
+  "prod": {
+    "secret": "ENV.APP_SECRET",
+    "db": {
+      "url": "ENV.LORUM_DB_URL",
+      "options": {
+        "native": true
+      }
+    }
+  }
+}
